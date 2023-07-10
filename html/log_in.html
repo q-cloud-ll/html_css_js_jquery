@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调查问卷</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/htmleaf-demo.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="cont_principal">
+        <div class="cont_join  ">
+            <div class="cont_letras">
+                <p>一起</p>
+                <p>向</p>
+                <p>未来</p>
+            </div>
+
+            <div class="cont_form_join">
+                <h2>2022北京冬奥会</h2>
+                <p>姓名</p>
+                <input type="text" class="input_text" />
+
+                <p>电话号</p>
+                <input type="text" class="input_text" />
+
+                <p>邮箱</p>
+                <input type="email" class="input_text" />
+                <div class="chooses">
+
+
+                    <p>1.对冬奥会的了解情况为</p>
+                    <form action="">
+                        <input type="radio" name="1" class="input"><span>十分了解</span>
+                        <input type="radio" name="1" class="input"><span>一般了解</span>
+                        <input type="radio" name="1" class="input"><span>不了解</span>
+                    </form>
+                </div>
+                <div class="chooses">
+                    <p>2.对冬奥会的了解情况为</p>
+                    <form action="">
+                        <input type="radio" name="2" class="input"><span>十分了解</span>
+                        <input type="radio" name="2" class="input"><span>一般了解</span>
+                        <input type="radio" name="2" class="input"><span>不了解</span>
+                    </form>
+                </div>
+
+                <div class="chooses">
+                    <p>3.你冬季运动的主要方式是</p>
+                    <form action="">
+                        <input type="checkbox" name="sport" id="" class="input" value="sport1"><span>冰雪运动</span>
+                        <input type="checkbox" name="sport" id="" class="input" value="sport2"><span>跑步</span>
+                        <input type="checkbox" name="sport" id="" class="input" value="sport3"><span>游泳</span>
+                        <input type="checkbox" name="sport" id="" class="input" value="sport4"><span>健身房器械</span>
+                        <input type="checkbox" name="sport" id="" class="input" value="sport5"><span>其他</span>
+
+                    </form>
+                </div>
+
+                <div class="chooses">
+                    <p>4.2022年冬奥会的口号是</p>
+                    <form action="">
+                        <input type="radio" name="4" class="input" value="slogn"><span>激情冰火属于你</span>
+                        <input type="radio" name="4" class="input" value="slogn1"><span>点燃心中之火</span>
+                        <input type="radio" name="4" class="input" value="slogn2"><span>纯洁的冰雪，激情约会</span>
+
+                    </form>
+                </div>
+                <div class="chooses">
+                    <p>5.2022年冬奥会在那举办</p>
+                    <form action="">
+                        <input type="radio" name="5" class="input"><span>张家界</span>
+                        <input type="radio" name="5" class="input"><span>张家口</span>
+                        <input type="radio" name="5" class="input"><span>哈尔滨</span>
+                    </form>
+                </div>
+                <div class="chooses">
+                    <p>6.2022年冬奥什么期间举办</p>
+                    <form action="">
+                        <input type="radio" name="5" class="input"><span>2月9号--26日</span>
+                        <input type="radio" name="5" class="input"><span>2月4号--20日</span>
+                        <input type="radio" name="5" class="input"><span>1月4号--20日</span>
+                    </form>
+                </div>
+                <div class="chooses">
+                    <p>7.2022年冬奥会的吉祥物是什么</p>
+                    <form action="">
+                        <input type="radio" name="5" class="input"><span>冰墩墩</span>
+                        <input type="radio" name="5" class="input"><span>雪容融</span>
+                    </form>
+                </div>
+                <div class="chooses">
+                    <p>8.谈谈您心中的冬奥精神</p>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="finish">提交问卷成功</div>
+            <div class="cont_btn_join">
+                <input type="submit" onclick="join_1()" value="填写问卷" class="submit">
+            </div>
+        </div>
+        <div class="goback"><a href="./index.html"><span>
+                    </span> <span><button class="button"><span>返回首页</span></button>
+                </span></a></div>
+    </div>
+</body>
+<script>
+    var t = 0;
+
+    function join_1() {
+        if (t == 0) {
+            document.querySelectorAll('.cont_letras > p')[0].style.left = '200px';
+            document.querySelectorAll('.cont_letras > p')[1].style.left = '-620px';
+            document.querySelectorAll('.cont_letras > p')[2].style.left = '200px';
+            setTimeout(function () {
+                document.querySelector('.cont_join').className = 'cont_join cont_join_form_act';
+            }, 500);
+            t++;
+            document.querySelector('.submit').value = "提交"
+            document.querySelector('.cont_btn_join').style.bottom = "0px"
+        } else {
+            t++;
+            document.querySelector('.cont_form_join').style.bottom = '-1020px';
+            document.querySelector('.cont_btn_join').style.bottom = "-100px"
+            setTimeout(function () {
+                document.querySelector('.cont_join').className =
+                    'cont_join cont_join_form_act cont_join_finish';
+            }, 500);
+            setTimeout(function () {
+                document.querySelector('.finish').style.left = "400px"
+            }, 1000);
+        }
+    }
+</script>
+
+</html>

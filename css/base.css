@@ -1,0 +1,32 @@
+/* 公共样式 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 去除a的下划线 */
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    font-family: "UniqloProRegular", "fzlt_pro" !important;
+    overflow-x: hidden;
+    background: white !important;
+    font: 12px "UniqloProRegular", "syht_Regular" !important;
+}
+
+/* 设置一个类，用来表示中间容器的宽度 */
+.w{
+    /* 固定容器的宽度 */
+    width: 1280px;
+    /* 居中 */
+    margin: 0 auto;
+}
+
+div{
+    display: block;
+}

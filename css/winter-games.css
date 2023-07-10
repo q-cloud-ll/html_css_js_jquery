@@ -1,0 +1,819 @@
+/* 小改动 start */
+.international {
+  color: #fff;
+}
+/* 小改动 end */
+
+/* 倒计时 start */
+.countdown {
+  position: relative;
+  width: 496px;
+  height: 335px;
+  margin: 0px auto;
+}
+
+.bg {
+  position: absolute;
+  width: 496px;
+  height: 100%;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 130px;
+  top: 10px;
+}
+
+.logo div {
+  flex: 1;
+  text-align: center;
+  line-height: 130px;
+}
+
+.logo div:nth-of-type(1) img {
+  width: 110px;
+  height: 130px;
+}
+
+.logo div:nth-of-type(2) {
+  border-left: solid 1px #ffffff;
+}
+
+.logo div:nth-of-type(2) img {
+  width: 130px;
+  height: 130px;
+}
+
+#countdown {
+  overflow: hidden;
+  position: relative;
+  width: 96%;
+  margin: auto;
+  height: 102px;
+  margin-top: 28px;
+  /* background-color: aqua; */
+}
+
+#countdown span {
+  display: inline-block;
+}
+
+.day {
+  overflow: hidden;
+  width: 168px;
+  height: 100%;
+}
+
+.hour,
+.min,
+.sec {
+  overflow: hidden;
+  width: 97px;
+  height: 100%;
+}
+
+#countdown span p {
+  width: 100%;
+  height: 40px;
+  margin-top: 0px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  color: #234ead;
+}
+
+#countdown span p:nth-of-type(2) {
+  width: 100%;
+  height: 65px;
+  margin-top: -10px;
+  line-height: 65px;
+  font-size: 45px;
+  /* font-family: fantasy; */
+}
+
+.countdown_word {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #ffffff;
+}
+/* 倒计时 end */
+
+.g-wrap {
+  height: 515px;
+}
+.w-content {
+  height: 100%;
+  background-image: url(../w-images/bj2022.jpg);
+  background-position: center 100%;
+  background-size: 1240px 514px;
+  position: relative;
+}
+.layout {
+  width: 1240px;
+  margin: 0 auto;
+}
+.w-content .caption {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: auto;
+  font-size: 40px;
+  color: #043383;
+  margin: 0;
+  word-wrap: break-word;
+  writing-mode: vertical-rl;
+}
+/* 场馆对应描述 start */
+
+.venue {
+  background-image: url(../w-images/bj_bk.jpg.jpeg);
+  background-position: 50%;
+  background-color: #fff;
+}
+.desc-list {
+  display: inline-block;
+  position: relative;
+  top: 43px;
+  left: 62px;
+  width: 271px;
+  height: 416px;
+  overflow: hidden;
+}
+.desc-list .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 33px 30px 35px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.desc-list .item .name {
+  font-size: 18px;
+  color: #043383;
+  margin: 0 0 10px;
+}
+.desc-list .item .name:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 27px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url(../w-images/before.png);
+}
+.desc-list .item .name p {
+  width: 173px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.desc-list .item img {
+  width: 210px;
+  height: 117px;
+  margin-bottom: 15px;
+  background-color: #96fffb;
+}
+
+.desc-list .item .detail {
+  font-weight: 450;
+  font-size: 14px;
+  color: #555;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 场馆对应描述 end */
+
+.w-content .venue-icon.show span {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 33px;
+  top: -14px;
+  left: -7px;
+  background: url(../w-images/show.png) no-repeat 50%/100%;
+}
+/* 张家口icon布局 start */
+.zhangjiakou {
+  display: inline-block;
+  position: relative;
+  top: -33.5%;
+  left: 18.6%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.zhangjiakou .star {
+  width: 18px;
+  height: 18px;
+  left: 51%;
+  top: 50%;
+}
+.w-content .star {
+  position: absolute;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.w-content .zhangjiakou .venue-icon[data-index="10"] {
+  top: 30px;
+  left: 49px;
+}
+
+.w-content .zhangjiakou .venue-icon[data-index="11"] {
+  top: 57px;
+  left: 92px;
+}
+
+.w-content .zhangjiakou .venue-icon[data-index="12"] {
+  top: 81px;
+  left: 86px;
+}
+
+.w-content .zhangjiakou .venue-icon[data-index="13"] {
+  top: 103px;
+  left: 67px;
+}
+.w-content .venue-icon {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  width: 16px;
+  height: 11px;
+  cursor: pointer;
+  background: url(../w-images/object.png.png) no-repeat 50%;
+}
+/* 张家口icon布局 end */
+
+/* 北京场馆icon布局 start */
+.w-content .beijing {
+  display: inline-block;
+  position: relative;
+  top: 4.4%;
+  left: 26.1%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.w-content .beijing .star {
+  width: 23px;
+  height: 21px;
+}
+.w-content .beijing .venue-icon[data-index="2"] {
+  top: 41px;
+  left: 72px;
+}
+.w-content .beijing .venue-icon[data-index="3"] {
+  top: 72px;
+  left: 33px;
+}
+.w-content .beijing .venue-icon[data-index="4"] {
+  top: 54px;
+  left: 37px;
+}
+.w-content .beijing .venue-icon[data-index="5"] {
+  top: 9px;
+  left: 61px;
+}
+.w-content .beijing .venue-icon[data-index="6"] {
+  top: 78px;
+  left: 8px;
+}
+.w-content .beijing .venue-icon[data-index="7"] {
+  top: 23px;
+  left: 74px;
+}
+/* 北京场馆icon布局 end */
+
+/* 延庆场馆icon布局 start */
+.w-content .yanqing {
+  display: inline-block;
+  position: relative;
+  top: -17.2%;
+  left: 8.8%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.w-content .yanqing .venue-icon[data-index="8"] {
+  top: 50px;
+  left: 81px;
+}
+.w-content .yanqing .venue-icon[data-index="9"] {
+  top: 76px;
+  left: 62px;
+}
+/* 延庆场馆icon布局 end */
+
+/* 冬奥活动 start */
+.w-dahd {
+  color: #043383;
+}
+/* 冬奥活动 end */
+
+/* 行走的冰墩墩 start */
+.monsters {
+  opacity: 0;
+  transition: all 1s;
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  left: 50%;
+  margin-top: 10px;
+  margin-left: -950px;
+  bottom: 0;
+  z-index: 99;
+  transition: all 3.2s ease;
+  /* background-color: chartreuse; */
+}
+
+.monsters > div {
+  top: 10px;
+}
+
+.monsters-first {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  animation: move01 15s linear infinite;
+}
+
+.monsters-second {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  animation: move01 15s linear 2s infinite;
+}
+
+.monsters-third {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200x;
+  height: 200px;
+  opacity: 0;
+  animation: move01 15s linear 4s infinite;
+}
+
+.monsters-fourth {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  animation: move01 15s linear 6s infinite;
+}
+
+.monsters-fifth {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  animation: move01 15s linear 8s infinite;
+}
+
+@keyframes move01 {
+  0% {
+    transform: translate(-200px, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(1920px, 0);
+    opacity: 1;
+  }
+}
+
+.monsters div div img {
+  width: 135px;
+  height: 140px;
+}
+/* 行走的冰墩墩 end */
+
+/* 拖拽 start */
+.city {
+  overflow: hidden;
+  position: relative;
+  /* top: 50px; */
+  width: 1180px;
+  height: 400px;
+  margin: 0px auto;
+  margin-bottom: 70px;
+}
+
+.city-first {
+  float: left;
+  width: 53px;
+  height: 320px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(194, 160, 96);
+}
+
+.city-second {
+  width: 1060px;
+  height: 310px;
+  float: left;
+  margin-left: 67px;
+  padding-top: 20px;
+  position: relative;
+  top: -20px;
+  overflow: hidden;
+}
+
+.city-second ul {
+  position: relative;
+  width: 4050px;
+  height: 300px;
+}
+
+.city-second ul li {
+  transition: all 0.4s ease;
+  float: left;
+  width: 250px;
+  height: 300px;
+  margin-right: 20px;
+  margin-top: 38px;
+  position: relative;
+  list-style: none;
+}
+
+.city-second ul li img {
+  width: 240px;
+  height: 300px;
+}
+
+.city-second ul li p {
+  position: relative;
+  top: 10px;
+  margin-left: 39px;
+  transition: all 0.5s;
+}
+
+.city-second ul li:hover {
+  transform: translateY(-30px);
+}
+
+.line-last {
+  position: absolute;
+  top: 122px;
+  left: 26px;
+  width: 1px;
+  height: 60px;
+  background-color: black;
+}
+
+.boxx {
+  position: absolute;
+  top: 340px;
+  left: 120px;
+  width: 1060px;
+  height: 3px;
+  background-color: rgb(226, 224, 224);
+}
+
+.city-box {
+  position: absolute;
+  cursor: pointer;
+  top: -14px;
+  z-index: 1;
+  width: 139px;
+  height: 28px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(194, 160, 96);
+  background-clip: padding-box;
+}
+
+.city-box p {
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  margin-top: -0px;
+  color: rgb(194, 160, 96);
+}
+
+.boxx-circle {
+  position: absolute;
+  bottom: -3px;
+  right: 0px;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: rgb(226, 224, 224);
+}
+/* 拖拽 end */
+
+/* 赛事中心 start */
+.dataDateMod {
+  width: 1240px;
+  color: #000;
+  height: 66px;
+}
+.dataDateMod .item {
+  width: 100%;
+  float: left;
+}
+.dataDateMod .item .tit,
+.dataEndMod .item .tit,
+.dataList .item .tit {
+  width: 209px;
+  height: 64px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  float: left;
+}
+.dataDateMod .item .tit h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  font-size: 18px;
+  height: 44px;
+  font-weight: 400;
+  line-height: 22px;
+  position: relative;
+  padding: 10px 10px 10px 55px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.dataDateMod .item ul,
+.dataEndMod .item ul,
+.dataList .item ul {
+  float: left;
+  margin-left: -1px;
+}
+.dataDateMod .item li,
+.dataEndMod .item li,
+.dataList .item li {
+  width: 49px;
+  height: 64px;
+  text-align: center;
+  float: left;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  line-height: 20px;
+  color: #666;
+  font-size: 15px;
+  margin-left: -1px;
+  position: relative;
+}
+.dataDateMod .item li a,
+.dataDateMod .item li p {
+  color: #666;
+  width: 100%;
+  display: block;
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+.dataDateMod .item .m {
+  color: #333;
+  font-size: 18px;
+}
+.dataDateMod .item li span.idxBar {
+  display: none;
+  background: #17b8ee;
+  width: 52px;
+  height: 5px;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+.dataDateMod,
+.dataEndMod,
+.dataList {
+  width: 1240px;
+}
+.dataEndMod .item,
+.dataList .item {
+  margin-top: -1px;
+  float: left;
+}
+.dataList .itemKm ul li:nth-child(3),
+.dataList .itemKm ul li:nth-child(19) {
+  background: url(../w-images/yanhua.png) 50% no-repeat;
+}
+.dataList .item li {
+  position: relative;
+  background-color: #fff;
+}
+.dataList .item .tit h2 a {
+  display: block;
+  color: #333;
+  width: 144px;
+  height: 100%;
+}
+.dataList .item .tit h2 a .sportIcon {
+  position: absolute;
+  height: 44px;
+  top: 10px;
+  left: -6px;
+}
+.dataList .itemKm .tit h2,
+.dataList .itemKm ul li {
+  cursor: default;
+}
+.dataDateMod .item .tit h2,
+.dataEndMod .item .tit h2,
+.dataList .item .tit h2 {
+  color: #333;
+  font-size: 18px;
+  height: 44px;
+  font-weight: 400;
+  line-height: 22px;
+  position: relative;
+  padding: 10px 10px 10px 55px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.dataEndMod .item .tit h2 span,
+.dataList .item .tit h2 span,
+.dataList .item .tit h2 span {
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.dataList .item .tit h2 a .sportIcon {
+  position: absolute;
+  height: 44px;
+  top: 10px;
+  left: -6px;
+}
+.dataList .item li.bsr {
+  background-color: #e7f8fd;
+}
+.dataList .item li {
+  position: relative;
+  background: #fff;
+}
+.dataList .item li.bsr a,
+.dataList .item li span.idxBar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.dataDateMod .item li.now span.idxBar,
+.dataList .item li.jpss span.jpNum,
+.dataList .item li.now span.idxBar {
+  display: block;
+}
+.dataList .item li span.jpNum {
+  width: 31px;
+  height: 39px;
+  background: url(../w-images/jiangpai.png) no-repeat;
+  background-size: contain;
+  color: #e08400;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 400;
+  display: none;
+  margin: 12px 10px;
+}
+.dataList .item li.zj {
+  height: 64px;
+  width: 68px;
+  line-height: 64px;
+  background: #fff;
+  color: #666;
+  font-weight: 400;
+  font-size: 18px;
+}
+.dataDateMod .item li.zj,
+.dataDateMod .item li.zj:hover {
+  color: #333;
+  cursor: auto;
+}
+.dataDateMod .item li.zj {
+  width: 68px;
+  font-size: 15px;
+  color: #666;
+}
+/* 赛事中心 end */
+
+/* 弹唱 start */
+
+/* 触发弹窗图片的样式 */
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {
+  opacity: 0.7;
+}
+
+/* 弹窗背景 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 视频 */
+.img01 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* 文本内容 */
+.caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* 添加动画 */
+.img01,
+.caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* 关闭按钮 */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 350px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 小屏幕中图片宽度为 100% */
+@media only screen and (max-width: 700px) {
+  .img01 {
+    width: 100%;
+  }
+}
+/* 弹唱 end */
